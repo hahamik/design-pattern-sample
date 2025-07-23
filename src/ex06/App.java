@@ -19,8 +19,8 @@ public class App {
         // 1. 이메일 알림 + 기본
         Notifier b2 = new BasicNotifier();
         Notifier e2 = new EmailNotifier();
-        b2.send();
-        e2.send();
+        MyNotification.noti(b2);
+        MyNotification.noti(e2);
         System.out.println("__end");
     }
 }
