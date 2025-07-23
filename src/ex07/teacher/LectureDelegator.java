@@ -12,6 +12,7 @@ public class LectureDelegator {
     }
 
     public void delegateLecture(LectureType lectureType) {
+        // 공통 로직 수행
         teachers.stream()
                 .filter(teacher -> teacher.isSameLecture(lectureType))
                 .forEach(teacher -> teacher.doLecture());
