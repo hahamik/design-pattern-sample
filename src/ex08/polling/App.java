@@ -6,7 +6,7 @@ public class App {
         Customer1 customer1 = new Customer1();
 
         // 1. 마트는 입고 준비
-        lotteMart.received(); // 5초
+        new Thread(() -> lotteMart.received()).start(); // 5초)
 
         // 2. 입고 확인
         String value = lotteMart.getValue();
