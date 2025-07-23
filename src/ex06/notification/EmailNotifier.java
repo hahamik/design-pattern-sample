@@ -7,11 +7,14 @@ public class EmailNotifier implements Notifier {
         this.notifier = notifier;
     }
 
-//    public EmailNotifier() {}
+    public EmailNotifier() {
+    }
 
     @Override
     public void send() {
-        notifier.send();
+        if (notifier != null) {
+            notifier.send();
+        }
         System.out.println("이메일 전송");
     }
 }

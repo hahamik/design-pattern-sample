@@ -1,6 +1,5 @@
 package ex06;
 
-import ex06.notification.BasicNotifier;
 import ex06.notification.EmailNotifier;
 import ex06.notification.Notifier;
 
@@ -17,7 +16,7 @@ public class App {
 //        System.out.println("__end");
 
         // 1. 이메일 알림 + 기본
-        Notifier e2 = new EmailNotifier(new BasicNotifier());
+        Notifier e2 = new EmailNotifier(null);
         e2.send();
         System.out.println("__end");
     }
