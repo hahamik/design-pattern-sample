@@ -2,8 +2,8 @@ package ex06;
 
 import ex06.notification.Notifier;
 
-public class MyNotification {
-    public static void noti(Notifier notifier) {
+public class ClientNotification {
+    public static void send(Notifier notifier) {
         notifier.send();
     }
 }
